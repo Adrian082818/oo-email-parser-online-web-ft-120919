@@ -10,5 +10,5 @@ class EmailAddressParser
     # @emails.split(",")
  email_array = @emails.split(", ").uniq
 email_array.flatten
- 
+ end 
 end 
