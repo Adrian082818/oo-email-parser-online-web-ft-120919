@@ -9,7 +9,7 @@ class EmailAddressParser
   def parse 
     # @emails.split(",")
  @emails.split(", ").uniq
- @emails.delete_if
+ @emails.delete_if {|email| email.empty?}
  
   end 
 end 
