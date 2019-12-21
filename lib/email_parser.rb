@@ -10,6 +10,7 @@ class EmailAddressParser
     # @emails.split(",")
  @emails.split(", ").uniq
  @emails.delete_if {|email| email.empty?}
+ @emails
  
   end 
 end 
