@@ -8,8 +8,8 @@ class EmailAddressParser
   
   def parse 
     # @emails.split(",")
- email_array = @emails.split(/[, ]/).uniq
+ email_array = @emails.split(/[, ]/)
 email_array.reject!{|e| e.empty?}
-email_array
+email_array.uniq
  end 
 end 
