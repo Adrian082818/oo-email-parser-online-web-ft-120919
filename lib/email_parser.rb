@@ -9,6 +9,6 @@ class EmailAddressParser
   def parse 
     # @emails.split(",")
  email_array = @emails.split(/[, ]/).uniq
-email_array.flatten
+email_array.delete!{||}
  end 
 end 
